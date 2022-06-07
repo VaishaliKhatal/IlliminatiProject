@@ -1,0 +1,114 @@
+
+vaishali_khatal@ARPGL001522 MINGW64 /d/Learning and Training/Git/Project/IlliminatiProject
+$ git config --global user.name "Vaishali"
+
+vaishali_khatal@ARPGL001522 MINGW64 /d/Learning and Training/Git/Project/IlliminatiProject
+$ git config --global user.email "vaishali_khatal@persistent.com"
+
+vaishali_khatal@ARPGL001522 MINGW64 /d/Learning and Training/Git/Project/IlliminatiProject
+$ git config user.name
+Vaishali
+
+vaishali_khatal@ARPGL001522 MINGW64 /d/Learning and Training/Git/Project/IlliminatiProject
+$ git config --list
+diff.astextplain.textconv=astextplain
+filter.lfs.clean=git-lfs clean -- %f
+filter.lfs.smudge=git-lfs smudge -- %f
+filter.lfs.process=git-lfs filter-process
+filter.lfs.required=true
+http.sslbackend=openssl
+http.sslcainfo=C:/Program Files/Git/mingw64/ssl/certs/ca-bundle.crt
+core.autocrlf=true
+core.fscache=true
+core.symlinks=false
+pull.rebase=false
+credential.helper=manager-core
+credential.https://dev.azure.com.usehttppath=true
+init.defaultbranch=master
+filter.lfs.clean=git-lfs clean -- %f
+filter.lfs.smudge=git-lfs smudge -- %f
+filter.lfs.process=git-lfs filter-process
+filter.lfs.required=true
+user.name=Vaishali
+user.email=vaishali_khatal@persistent.com
+core.editor=notepad
+merge.tool=meld
+
+vaishali_khatal@ARPGL001522 MINGW64 /d/Learning and Training/Git/Project/IlliminatiProject
+$ git config --global core.editor notepad
+
+vaishali_khatal@ARPGL001522 MINGW64 /d/Learning and Training/Git/Project/IlliminatiProject
+$ git --version
+git version 2.33.0.windows.1
+
+vaishali_khatal@ARPGL001522 MINGW64 /d/Learning and Training/Git/Project/IlliminatiProject
+$ git init
+Initialized empty Git repository in D:/Learning and Training/Git/Project/IlliminatiProject/.git/
+
+vaishali_khatal@ARPGL001522 MINGW64 /d/Learning and Training/Git/Project/IlliminatiProject (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        File1.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+vaishali_khatal@ARPGL001522 MINGW64 /d/Learning and Training/Git/Project/IlliminatiProject (master)
+$ git add .
+
+vaishali_khatal@ARPGL001522 MINGW64 /d/Learning and Training/Git/Project/IlliminatiProject (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   File1.txt
+
+
+vaishali_khatal@ARPGL001522 MINGW64 /d/Learning and Training/Git/Project/IlliminatiProject (master)
+$ git commit -m "WI1:File1 created, with welcome to git msg"
+[master (root-commit) f990475] WI1:File1 created, with welcome to git msg
+ 1 file changed, 1 insertion(+)
+ create mode 100644 File1.txt
+
+vaishali_khatal@ARPGL001522 MINGW64 /d/Learning and Training/Git/Project/IlliminatiProject (master)
+$ git log
+commit f9904754edc7543af910f2581b5f7ae2710960e2 (HEAD -> master)
+Author: Vaishali <vaishali_khatal@persistent.com>
+Date:   Tue Jun 7 12:14:44 2022 +0530
+
+    WI1:File1 created, with welcome to git msg
+
+vaishali_khatal@ARPGL001522 MINGW64 /d/Learning and Training/Git/Project/IlliminatiProject (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+vaishali_khatal@ARPGL001522 MINGW64 /d/Learning and Training/Git/Project/IlliminatiProject (master)
+$ git remote add origin https://github.com/VaishaliKhatal/IlliminatiProject.git
+
+vaishali_khatal@ARPGL001522 MINGW64 /d/Learning and Training/Git/Project/IlliminatiProject (master)
+$ git push -u origin master
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 258 bytes | 258.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/VaishaliKhatal/IlliminatiProject.git
+ * [new branch]      master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+
+vaishali_khatal@ARPGL001522 MINGW64 /d/Learning and Training/Git/Project/IlliminatiProject (master)
+$
+vaishali_khatal@ARPGL001522 MINGW64 /d
+$ git clone https://github.com/VaishaliKhatal/IlliminatiProject.git
+Cloning into 'IlliminatiProject'...
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 3 (delta 0), pack-reused 0
+Receiving objects: 100% (3/3), done.
